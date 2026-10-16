@@ -1,0 +1,40 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Python virtual environments
+.venv/
+.venv-*/
+venv/
+env/
+
+# Python generated files
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Large source datasets
+data/raw/*.zip
+data/raw/2019-*.csv
+
+# Processed data
+data/processed/*
+
+# Website ingestion checkpoint
+data/raw/web_events_checkpoint.json
+
+# Temporary and backup files
+*.bak
+*.tmp
+
+# Editor and operating system files
+.vscode/
+.DS_Store

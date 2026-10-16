@@ -1,0 +1,28 @@
+{
+  "generator": "Customer360 assessment fixtures v1",
+  "nature": "SYNTHETIC contact, commerce, identity, ticket, campaign and consent data",
+  "public_source": "2019-Oct.csv",
+  "source_rows_scanned": 42448764,
+  "scan_rows_requested": 0,
+  "max_users_requested": 12000,
+  "cohort_web_users": 12000,
+  "purchase_event_observations": 4803,
+  "files": {
+    "crm_contacts.csv": 12292,
+    "orders.csv": 4009,
+    "payments.csv": 4009,
+    "identity_links.jsonl": 8571,
+    "support_tickets.jsonl": 3268,
+    "campaign_events.csv": 3092,
+    "consent_changes.csv": 12705
+  },
+  "as_of": "2019-11-01T00:00:00Z",
+  "currency_code": "USD",
+  "generation_notes": [
+    "Only a subset of web users has CRM records.",
+    "CRM/commerce/support/marketing/consent are synthetic, not Kaggle ground truth.",
+    "Synthetic orders are grouped from observed purchase events in user-session/day buckets.",
+    "Payment statuses are synthetic; do not equate a clickstream purchase with a paid order.",
+    "Email addresses belong to example.test and are not deliverable."
+  ]
+}
